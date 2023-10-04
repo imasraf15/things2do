@@ -30,7 +30,7 @@
     <div v-if="isShowStickyForm" :key="componentKey">
       <AppRightBar>      
         <template  v-slot:slot-body>
-          <SkeletonFrom  v-if="stickyFormloader"/>
+          <SkeletonFrom  v-if="stickyFormLoader"/>
           <StickyForm v-else />
         </template>
       </AppRightBar>
