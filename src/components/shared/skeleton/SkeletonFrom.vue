@@ -12,7 +12,7 @@
     </div>   
     <div class="mb-3">
         <div class="skeleton-box w-50"></div>
-        <div class="skeleton-box w-100 height-100"></div>
+        <div class="skeleton-box w-100 height-200"></div>
     </div> 
     <div class="mb-3 text-right">
         <div class="skeleton-box w-50"></div>
