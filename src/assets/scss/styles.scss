@@ -1,0 +1,132 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    background-color: #FAFAFA;
+}
+
+.t2d-sidebar {
+    background-color: #F4F4F4;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.sticky-wall-button-panel {
+    img:hover {
+        opacity: 0.7;
+    }
+}
+
+.t2d-btn {
+    background: #FFD43B !important;
+    color: #252525 !important;
+    border-color: #FFD43B !important;
+}
+
+.t2d-btn:hover {
+    background: #FFD4A9 !important;
+}
+
+.fullpage-sticky {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100% !important;
+}
+
+
+/* scrollbar */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.3);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.skeleton-box {
+    display: inline-block;
+    height: 2em;
+    position: relative;
+    overflow: hidden;
+    background-color: #DDDBDD;
+
+    &::after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        transform: translateX(-100%);
+        background-image: linear-gradient(90deg,
+                rgba(#fff, 0) 0,
+                rgba(#fff, 0.2) 20%,
+                rgba(#fff, 0.5) 60%,
+                rgba(#fff, 0));
+        animation: shimmer 5s infinite;
+        content: '';
+    }
+
+    @keyframes shimmer {
+        100% {
+            transform: translateX(100%);
+        }
+    }
+}
+
+.text-right {
+    text-align: right;
+}
+
+.w-32 {
+    width: 32.5%;
+}
+
+.error-message {
+    color: red;
+}
+
+.ql-editor,
+.ql-snow {
+    background: #fff;
+}
+
+.ql-editor {
+    height: 220px !important;
+}
+
+.sticky-name {
+    border-bottom: 1px solid #252525;
+
+    &:hover {
+        opacity: 0.8;
+        border-bottom: 1px dotted #252525
+    }
+}
+
+.sticky-card { 
+    height: 300px;
+    overflow-y: auto;
+}
+
+.height-100{height:100px}
+.height-200{height:200px}
+.app-right-bar{background-color: #F4F4F4; width: 400px; position: absolute; right: 0; top:0; bottom: 0;}
